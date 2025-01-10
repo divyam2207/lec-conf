@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./img/favicon.png" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <title>Stamats - UFL</title>
+        <meta property="og:title" content="Page Title for SEO"
+        />
+        <meta property="og:description" content="Description for SEO" />
+        <meta property="og:image" content="url to share image" />
+        <meta name="format-detection" content="telephone=no">
+    </head>
+    
+    <body>
+        <!-- START FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
+        <header class="header header-wrapper position-sticky w-100">
+            <div class="container-fluid header-container">
+                <div class="row justify-content-between header-row"> <a class="visually-hidden-focusable" href="#content" tabindex="1">Skip to main content</a>
+
+                    <!--
+                    START LOGO COL-->
+                    <div class="col-sm-8 col-md-6 col-logo"> <a class="navbar-brand" href="index.html" tabindex="1" alt="...">
+              <img src="./img/Florida_logo.svg" alt="Logo" title="school-logo" />
+              <span class="visually-hidden">School Logo Link</span>
+            </a>
+
+                    </div>
+                    <!-- END LOGO COL-->
+                    <!-- START DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
+                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3 flex-column audience-nav-col">
+                        <!-- Optional Offsite and UFL Header Links-->
+                        <div class="offsite-links d-flex justify-content-end"> <a href="#" class="optional-offsite-link">Optional off-site link</a>
+
+                            <a
+                            href="#" class="ufl-main-link">University of Florida</a>
+                        </div>
+                        <!-- END Optional Offsite and UFL Header Links-->
+                        <!-- Audience Nav Dropdown Links-->
+                        <div class="audience-nav-links d-flex justify-content-end">
+                            <button class="navbar-search" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" alt="Toggle Search Form"
+                            title="Toggle Search Form"> <span class="visually-hidden">Search Link</span>
+
+                            </button>
+                            <div class="dropdown">
+                                <div class="dropdown-hover"> <a class="nav-link dropdown-toggle-top" href="#" role="button" id="infoMenuLink"
+                                    aria-expanded="false"> Info for.. </a>
+ <span class="mobile-menu-toggle"
+                                    aria-expanded="false"></span>
+
+                                    <ul class="dropdown-menu animate slideIn"
+                                    aria-labelledby="infoMenuLink" tabindex="-1">
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Prospective Students</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Current Students</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Faculty & Staff</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Alumni & Friends</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Visitors & Family</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <div class="dropdown-hover"> <a class="nav-link dropdown-toggle-top" href="#" role="button" id="resourcesMenuLink"
+                                    aria-expanded="false"> Resources </a>
+ <span class="mobile-menu-toggle" aria-expanded="false"></span>
+
+                                    <ul
+                                    class="dropdown-menu animate slideIn dropdown-menu-lg-end" aria-labelledby="resourcesMenuLink">
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Directory</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Campus Map</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">News</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Calendar</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">UF Health</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">UF/IFAS</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">Athletics</a>
+
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#" tabindex="0">myUFL</a>
+
+                                        </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END DESKTOP ONLY TOP MENU ITEMS & DROPDOWNS-->
+                    <!-- START MOBILE ONLY SEARCH AND TOGGLE-->
+                    <div class="mobile-nav"> <a class="navbar-search" id="mobile-search-icon" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" alt="Toggle Search Form"
+                        title="Toggle Search Form" tabindex="0">
+              <span class="visually-hidden">Toggle Search Form</span>
+            </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+
+                            <span
+                            class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
+</span>
+                        </button>
+                    </div>
+                    <!-- END MOBILE ONLY SEARCH AND TOGGLE-->
+                </div>
+            </div>
+            <!-- END FULL WIDTH TOP NAV CONTAINER (LOGO + TOP NAV)-->
+            <!-- START FULL WIDTH MAIN NAV CONTAINER -->
+            <nav class="navbar main_navbar pt-0 pb-0 navbar-expand-xxl" id="main-navbar">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- START MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
+                        <div class="mobile-offsite-toggle-wrapper"> <span class="mobile-offsite-links">
+                <a href="#" class="mobile-offsite-link">OPTIONAL OFF-SITE LINK</a>
+                <a href="#" class="mobile-main-link">UNIVERSITY OF FLORIDA</a>
+              </span>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"> <span style="margin-bottom: 10px;margin-top: -10px;">MENU</span>
+
+                                <span
+                                class="navbar-icon-wrapper"> <span class="navbar-toggler-icon"></span>
+</span>
+                            </button>
+                        </div>
+                        <!-- END MOBILE ONLY LINKS + MOBILE MENU ACTIVE TOGGLE -->
+                        <!-- Start MAIN MENU UL with DD-->
+                        <ul class="navbar-nav d-md-flex m-auto justify-content-evenly flex-wrap w-100"
+                        id="main-nav-ul">
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="/about.html" id="navbarDropdown1" aria-expanded="false"
+                                aria-haspopup="true"> Register </a>
+
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item"> <a class="nav-link" href="#" id="navbarDropdown2" aria-expanded="false"> Abstract Submissions </a>
+
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" aria-expanded="false"> Program</a>
+
+                                <!--
+                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+
+                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
+                                aria-labelledby="navbarDropdown3" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Under Graduate Programs</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Graduate Programs</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Academic Departments</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Advising & Support</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Academic Policies</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Curriculum Development</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Another action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Something else here</a>
+
+                                    </li>
+                                </ul>
+                                <!-- END Dropdown DIV -->
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" aria-expanded="false"> Invisted Speakers </a>
+
+                                <!--
+                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+
+                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
+                                aria-labelledby="navbarDropdown4" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Under Graduate Programs</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Graduate Programs</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Academic Departments</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Advising & Support</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Academic Policies</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Curriculum Development</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Another action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Something else here</a>
+
+                                    </li>
+                                </ul>
+                                <!-- END Dropdown DIV -->
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" aria-expanded="false"> Venue </a>
+
+                                <!--
+                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+
+                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
+                                aria-labelledby="navbarDropdown5" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Under Graduate Programs</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Graduate Programs</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Academic Departments</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Advising & Support</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Academic Policies</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Curriculum Development</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Another action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Something else here</a>
+
+                                    </li>
+                                </ul>
+                                <!-- END Dropdown DIV -->
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            <li class="nav-item dropdown dropdown-hover"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" aria-expanded="false"> Committee</a>
+
+                                <!--
+                                Dropdown menu --> <span class="mobile-menu-toggle"></span>
+
+                                <ul class="dropdown-menu animate slideIn mt-0 ddm-mm col-count-three"
+                                aria-labelledby="navbarDropdown6" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Under Graduate Programs</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Graduate Programs</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Academic Departments</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Advising & Support</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Academic Policies</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Curriculum Development</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Another action</a>
+
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" tabindex="0">Something else here</a>
+
+                                    </li>
+                                </ul>
+                                <!-- END Dropdown DIV -->
+                            </li>
+                            <!-- End Dropdown Menu List Item -->
+                            <!-- Start menu li with DD-->
+                            
+                            <!-- End Dropdown Menu List Item -->
+                            <div class="mobile-secondary-dropdown"></div>
+                        </ul>
+                        <!-- End MAIN MENU UL -->
+                        <!-- START MOBILE ONLY SECONDARY LINKS -->
+                        <!-- END MOBILE ONLY SECONDARY LINKS -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- END FULL WIDTH MAIN NAV CONTAINER -->
+        <div id="content">
+            <!-- START HERO CONTAINER -->
+            <section class="hero container-fluid p-0 w-100">
+                <div class="hero-wrapper verScroll_Col">
+                    <!-- START / END HERO BG IMG CONTAINER - HEIGHT/WIDTH/IMG DICTATED IN
+                    CSS -->
+                    <div class="hero-bg-img"></div>
+                    <!-- START OBJECT WRAPPER (ANIMATED ORANGE LINES ON RIGHT SIDE)
+                    -->
+                    <!-- <div class="hero-object-wrapper">
+                        <div class="hero-object" id="object1" style="top: 120px;">
+                            <img class="vce-single-image" width="10" height="219" src="./img/ver_bar_thick.webp"
+                            alt="">
+                        </div>
+                        <div class="hero-object" id="object2" style="top: 120px;">
+                            <img loading="lazy" class="vce-single-image" width="2" height="363" src="./img/ver_bar_thin.webp"
+                            alt="">
+                        </div>
+                    </div> -->
+                    <!-- END OBJECT WRAPPER -->
+                    <!-- START HERO BANNER WRAPPER - CBC -->
+                    <div class="hero-banner-wrapper hero__text">
+                        <div class="banner_subtitle">
+                            <!-- <p>A New Kind of Field Camp</p> -->
+                        </div>
+                        <div class="banner_title">
+                             <h1>
+                                LEC 2023 Lester Eastman Conference on High Performance Devices (Aug 11-13, 2025)
+                              </h1>
+
+                            <br>
+                            <!-- START HERO BANNER EXCERPT SHOW ON HOVER - CBC -->
+                            <div class="hero-excerpt-btn-wrapper" style="display:none;">
+                                <p class="hero__excerpt" style="line-height: 24px;"><span>University of Florida geologist Anita Marshall launched GeoSPACE, an accessible field camp that’s opening geosciences — the least diverse STEM field — to students with disabilities.</span>
+
+                                </p> <a class="button animated-border-button button-border-orange button-text-light"
+                                href="#">Explore Academics</a>
+
+                            </div>
+                            <!-- END HERO BANNER EXCERPT SHOW ON HOVER - CBC -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- END HERO CONTAINER -->
+            <!-- START Showcase Text Only - 1 Button -->
+            <section class="showcase-text-only">
+                <div class="container">
+                    <!-- <div class=""> -->
+                        <div class="col-12" style="text-align:left;">
+
+                            <blockquote>
+                                <h3 style="font-size:32px; font-weight:bold; font-style:italic; color:#0021A5;">"The Lester Eastman Conference on High Performance Devices has highlifont-colorghted the physics and performance of devices and circuits for high-speed, high- frequency, high-power, and ultra-low-power devices, as well as optoelectronics and other emerging material and device technologies for more than 2 decades."</h3>
+                            </blockquote>
+
+                             <br>
+                             <p style="text-align:left;">The 2025 Lester Eastman Conference on High Performance Devices will be held August 11-13, 2025, at the University of Florida in Gainesville, FL USA. As in previous years, the technical program will encompass innovative device concepts, materials breakthroughs, and advances in transport phenomena to realize the next generation of novel devices. The conference will emphasize in particular a discussion of how high-performance device technology is advanced, in addition to highlighting specific results. Topics of submission typically include but are not limited to the following areas:</p>
+
+                             <ul style="font-weight: 400;">
+                                 <li>High frequency devices: RF, microwave, and millimeter-wave transistors, diodes and detectors, and other high-frequency device concepts.</li>
+                                 <li>Power devices: high power and high voltage transistors, diodes, and other components for power electronics applications, including advanced device design and processing.</li>
+                                 <li>Optoelectronic devices: optical emitters and detectors for communication and sensing, LEDs for solid state lighting and communication, high-efficiency photovoltaics, and other optoelectronic device concepts.</li>
+                                 <li>Emerging devices: devices based on new semiconductor materials and physical phenomena, including but not limited to: piezoelectric resonators, ferroelectric devices, electro-optical modulators, quantum devices, bioelectronics, and chemical/biological sensors.</li>
+                             </ul>
+
+                             <br>
+                             
+                             <p style="text-align:left;">For the 2025 conference, we will feature sessions on device technologies for electronics in extreme environments. Some examples of “extreme environments” include high temperature environments (&gt;300C, focused on 500-800C), cryogenic temperatures (4K to 77K), radiation environments (including space and nuclear reactors), high electric field and/or power density (such as those experienced by WBG/UWBG devices), and harsh chemical environments. There is a large body of work in the community in recent years due to substantial investment by DARPA, DoD MURI, and CHIPS Act initiatives which will be highlighted by program managers and technical performers. The focus sessions will include both technical discussion as well as industry presentations on advances in equipment solutions.</p>
+                             
+                             <p style="text-align:left;">Technical Program Chair: Travis Anderson, University of Florida</p>
+                             <p style="text-align:left;">General Chair: Rongming Chu, Pennsylvania State University</p>
+                             
+                            <!-- <div class="d-flex flex-wrap justify-content-center button-wrapper"> <a class="button animated-border-button button-border-blue button-text-dark"
+                                href="#">Explore Academics</a> -->
+
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+            
+            <!-- END Showcase Text Only -->
+            
+        </div>
+        <!-- OFF CANVAS DROPDWON-->
+        <div class="offcanvas offcanvas-top off-canvas-search" tabindex="-1" id="offcanvasTop"
+        aria-labelledby="siteSearch" data-bs-scroll="true" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                tabindex="3"></button>
+            </div>
+            <div class="offcanvas-body" id="siteSearch">
+                <!-- START SEARCH FORM -->
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="How can we help you?"
+                    tabindex="1" autofocus="true" aria-label="Search"> <a class="btn search-submit" type="submit" tabindex="2"></a>
+
+                </form>
+                <!-- END SEARCH FORM -->
+            </div>
+        </div>
+        <!-- END OFF CANVAS DROPDWON-->
+        <!-- START FOOTER WRAPPER -->
+        <div class="footer-wrapper position-relative">
+            <div id="footerTopBorder" style="width: 1%;"></div>
+            <!-- Footer -->
+            <footer class="footer m-0 footer-title pb-4 text-lg-start text-white"
+            style="background-color: #45526e">
+                <!-- Grid container -->
+                <div class="container-fluid p-4 pb-0">
+                    <!-- Section: Links -->
+                    <section class="footer-section">
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-12 col-md-6 footer-col-logo pb-5"> <a class="navbar-brand" href="index.html" alt="...">
+              <span>
+                <img src="./img/hwcoe-logo.png" alt="Logo" title="school-logo" />
+              </span>
+              <span class="visually-hidden">School Logo Link</span>
+            </a>
+
+                            </div>
+                            <div class="col-12 col-md-5 footer-col-social"> <a href="http://www.facebook.com/uflorida/" target="_blank" class="facebook-icon"
+                                rel="noopener" alt="...">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="ufl-brands ufl-facebook">
+                <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+              </svg>
+              <span class="visually-hidden">Facebook Icon</span>
+            </a>
+ <a href="https://twitter.com/UF/" target="_blank" class="twitter-icon"
+                                rel="noopener" alt="...">
+              <svg viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg" class="ufl-brands ufl-twitter"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="currentColor"/></svg>
+              <span class="visually-hidden">Twitter Icon</span>
+            </a>
+ <a href="https://instagram.com/uflorida/" target="_blank"
+                                class="instagram-icon" rel="noopener" alt="...">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="ufl-brands ufl-instagram">
+                <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+              <span class="visually-hidden">Instagram Icon</span>
+            </a>
+ <a href="http://www.youtube.com/user/universityofflorida/"
+                                target="_blank" class="youtube-icon" rel="noopener" alt="...">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="ufl-brands ufl-youtube">
+                <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+              </svg>
+              <span class="visually-hidden">Youtube Icon</span>
+            </a>
+
+                            </div>
+                        </div>
+                        <!--END TOP Grid row-->
+                        <!--Start Link Grid row-->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mx-auto my-4 footer-address-col">
+                                 <h2 class="mb-4 footer-title pb-4"> Contact the College </h2>
+
+                                <p>100 Stately Hall
+                                    <br>PO Box 90210
+                                    <br>Gainesville, FL 32611-0212
+                                    <br>
+                                    <br> <a href="mailto:dolar-gupthgo@ufl.edu">dolar-gupthgo@ufl.edu</a>
+
+                                    <br> <a href="tel:3528675309">352-867-5309</a>
+
+                                </p>
+                            </div>
+                            <!-- END Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto my-4 footer-col">
+                                 <h2 class="mb-4 footer-title pb-4">Programs</h2>
+
+                                <ul>
+                                    <li> <a href="#">Undergraduate</a>
+
+                                    </li>
+                                    <li> <a href="#">Master’s</a>
+
+                                    </li>
+                                    <li> <a href="#">Doctoral</a>
+
+                                    </li>
+                                    <li> <a href="#">Online Certificates</a>
+
+                                    </li>
+                                    <li> <a href="#">Post-Doc</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto my-4 footer-col">
+                                 <h2 class="mb-4 footer-title pb-4"> Schools </h2>
+
+                                <ul>
+                                    <li> <a href="#">School of Thought</a>
+
+                                    </li>
+                                    <li> <a href="#">School of Practice</a>
+
+                                    </li>
+                                    <li> <a href="#">School of Policy & Implementation</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto my-4 footer-col">
+                                 <h2 class="mb-4 footer-title pb-4"> Departments </h2>
+
+                                <ul>
+                                    <li> <a href="#">Contemplative Studies</a>
+
+                                    </li>
+                                    <li> <a href="#"> Project Management</a>
+
+                                    </li>
+                                    <li> <a href="#"> Community Engagement & Improvement</a>
+
+                                    </li>
+                                    <li> <a href="#">Big Ideas</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-sm-6 col-md-6 col-lg-2 col-xl-2 mx-auto my-4 footer-col">
+                                 <h2 class="mb-4 footer-title pb-4"> Offices </h2>
+
+                                <ul>
+                                    <li> <a href="#">Dean</a>
+
+                                    </li>
+                                    <li> <a href="#">Alumni & Giving</a>
+
+                                    </li>
+                                    <li> <a href="#">Career Services</a>
+
+                                    </li>
+                                    <li> <a href="#">IT Support</a>
+
+                                    </li>
+                                    <li> <a href="#">Marketing & Communications</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END Grid column -->
+                        </div>
+                        <!--END Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+                    <!-- Section: Copyright NEED TO TWEAK -->
+                    <section class="copyright-section">
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-12 copyright-col">
+                                <!-- Copyright -->
+                                <div class="copyright-links"> <a class="text-white" href="https://www.ufl.edu/">© 2022 University of Florida</a>
+
+                                </div>
+                                <div class="copyright-links"> <a class="text-white" href="https://www.ufl.edu/">Accreditation</a>
+
+                                </div>
+                                <div class="copyright-links"> <a class="text-white" href="https://www.ufl.edu/">Privacy Policy</a>
+
+                                </div>
+                                <div class="copyright-links"> <a class="text-white" href="https://www.ufl.edu/">Equity Statement</a>
+
+                                </div>
+                                <!-- Copyright -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section: Copyright -->
+                </div>
+                <!-- Grid container -->
+            </footer>
+            <!-- Footer -->
+        </div>
+        <!-- END FOOTER WRAPPER -->
+        <script src="./js/all.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </body>
+
+</html>
