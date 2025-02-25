@@ -9886,7 +9886,7 @@ span.main-tag:after {
       z-index: 1;
       mix-blend-mode: multiply; }
     .hero .hero-wrapper .hero-bg-img {
-      background-image: url(../img/malachowsky-exterior.jpg);
+      background-image: url(../img/malachowsky-exterior.webp);
       mix-blend-mode: multiply;
       position: absolute;
       top: 0;
